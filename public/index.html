@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./jquery-ui.min.css">
+    <link rel="stylesheet" href="./jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="./jquery-ui.theme.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="print.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="stage">
+            <div class="seats csr-p">
+                <p class="droppable snap-area"></p>
+                <p class="droppable snap-area"></p>
+                <p class="droppable snap-area"></p>
+                <p class="droppable snap-area"></p>
+                <p class="droppable snap-area"></p>
+                <p class="droppable snap-area"></p>
+                <p class="droppable snap-area"></p>
+                <p class="droppable snap-area"></p>
+                <p class="droppable snap-area"></p>
+                <p class="droppable snap-area"></p>
+                <p class="droppable snap-area"></p>
+                <p class="droppable snap-area"></p>
+                <p class="droppable snap-area"></p>
+                <p class="droppable snap-area"></p>
+                <p class="droppable snap-area"></p>
+                <p class="droppable snap-area"></p>
+            </div>
+        </div>
+        <div class="storage">
+            <ul class="csr-p">
+                <li class="snap-area"><span class="draggable female">5伊藤智子 さん</span>
+                </li>
+                <li class="snap-area"><span class="draggable female">9大上絵美 さん</span>
+                </li>
+                <li class="snap-area"><span class="draggable female">13大橋瞳 さん</span>
+                </li>
+                <li class="snap-area"><span class="draggable male">2酒井正 さん</span>
+                </li>
+                <li class="snap-area"><span class="draggable female">6佐藤真依子 さん</span>
+                </li>
+                <li class="snap-area"><span class="draggable female">10鈴木風香 さん</span>
+                </li>
+                <li class="snap-area"><span class="draggable female">14鈴木聖菜 さん</span>
+                </li>
+                <li class="snap-area"><span class="draggable male">3瀬崎謙太郎 さん</span>
+                </li>
+                <li class="snap-area"><span class="draggable female">7手塚好江 さん</span>
+                </li>
+                <li class="snap-area"><span class="draggable male">11袴田純 さん</span>
+                </li>
+                <li class="snap-area"><span class="draggable female">4POKASHCHEVSKA VIRA さん</span>
+                </li>
+                <li class="snap-area"><span class="draggable male">8松山和弘 さん</span>
+                </li>
+                <li class="snap-area"><span class="draggable female">12御手洗亜季 さん</span>
+                </li>
+                <li class="snap-area"><span class="draggable"></span></li>
+                <li class="snap-area"><span class="draggable"></span></li>
+                <li class="snap-area"><span class="draggable"></span></li>
+            </ul>
+            <div class="buttons">
+                <div class="upside-down-button"><i class="fas fa-redo"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+    <script src="layout-change.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+.stage {
+    position: relative;
+}
+
+.stage::before,
+.stage::after {
+    border: 1px solid #333;
+    width: calc(100% - 5em);
+}
+
+.stage::before {
+    content: "前";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stage::after {
+    content: "後ろ";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stage.upside-down {
+    transform: rotate(180deg);
+}
+
+.stage.upside-down p span {
+    transform: rotate(-180deg);
+}
+
+.stage.upside-down::before,
+.stage.upside-down::after {
+    transform: translateX(-50%) rotate(-180deg);
+}
+
+.storage {
+    position: relative;
+}
+
+.upside-down-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 3em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: indigo;
+    color: #fff;
+    cursor: pointer;
+}
+
+.upside-down-button:hover {
+    background: coral;
+}
+
+* {
+    word-break: break-all
+}
+
+.honer {
+    font-size: 0.8em;
+    margin-left: 0.2em;
+}
+
+.droppable span {
+    background: #e1ffff;
+    font-size: 1.5em;
+    z-index: 100;
+}
+
+.droppable .male {
+    background: #eefaff;
+}
+
+.droppable .female {
+    background: #ffeef1;
+}
+
+
+/* 確認用のナンバリング */
+
+.seats p {
+    position: relative;
+    counter-increment: cnt;
+}
+
+.seats p::before {
+    content: counter(cnt);
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 1000;
+}

@@ -1,0 +1,34 @@
+@media print {
+    .storage {
+        display: none;
+    }
+    .stage {
+        width: 100%
+    }
+    .seats,
+    .container {
+        height: auto;
+        padding: 0;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .stage::before {
+        top: -5em;
+        width: 100%;
+    }
+    .stage::after {
+        bottom: -5em;
+        width: 100%;
+    }
+    body,
+    .container,
+    .stage,
+    .draggable {
+        background: transparent;
+    }
+}
