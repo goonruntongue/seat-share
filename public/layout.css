@@ -67,6 +67,42 @@
     background: coral;
 }
 
+.number-hide {
+    position: absolute;
+    bottom: 0;
+    right: 4em;
+    width: 3em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: indigo;
+    color: #fff;
+    cursor: pointer;
+}
+
+.number-hide:hover {
+    background: coral;
+}
+
+.gen-hide {
+    position: absolute;
+    bottom: 0;
+    right: 8em;
+    width: 3em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: indigo;
+    color: #fff;
+    cursor: pointer;
+}
+
+.gen-hide:hover {
+    background: coral;
+}
+
 * {
     word-break: break-all
 }
@@ -96,7 +132,7 @@
 }
 
 .droppable .female {
-    background: #ffeef1;
+    background: #ffe4ef;
 }
 
 
@@ -113,4 +149,17 @@
     top: 5%;
     left: 5%;
     z-index: 1000;
+}
+
+.seats p.n-hide::before,
+.num.n-hide {
+    display: none;
+}
+
+.male.color-hide {
+    background: transparent !important;
+}
+
+.female.color-hide {
+    background: transparent !important;
 }

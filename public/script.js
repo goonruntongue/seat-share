@@ -166,3 +166,10 @@ $(function() {
         applySnapState(state, { fromRemote: true });
     });
 });
+
+$(".number-hide").on("click", function() {
+    $(".seats p,.num").toggleClass("n-hide");
+});
+$(".gen-hide").on("click", function() {
+    $(".male,.female").toggleClass("color-hide");
+});

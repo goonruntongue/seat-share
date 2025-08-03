@@ -28,7 +28,14 @@
     body,
     .container,
     .stage,
-    .draggable {
-        background: transparent;
+    .draggable,
+    .droppable {
+        background: transparent !important;
+    }
+    .seats span {
+        font-size: 1.2em !important;
+    }
+    .break {
+        word-break: normal;
     }
 }
